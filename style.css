@@ -71,6 +71,10 @@ body{
     font-family: 'segoe_uiregular';
 }
 
+ul{
+    list-style-type: none;
+}
+
 a{
     all: unset;
 }
@@ -153,9 +157,18 @@ a:hover{
     background-color:#f7f2f2 ;
 }
 
+.presentation{
+    margin-top: 7% !important;
+}
 
+.presentation p{
+    font-size: 1.2em;
+}
 
-
+i{
+    font-size: 3rem;
+    color: blueviolet;
+}
 
 
 
