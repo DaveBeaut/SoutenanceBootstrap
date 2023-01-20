@@ -1,0 +1,171 @@
+                    /* FONTS */
+
+@font-face {
+    font-family: 'antipasto_proextrabold';
+    src: url('fonts/antipasto-pro-extrabold-trial-webfont.woff2') format('woff2'),
+         url('fonts/antipasto-pro-extrabold-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'antipasto_proextralight';
+    src: url('fonts/antipasto-pro-extralight-trial-webfont.woff2') format('woff2'),
+         url('fonts/antipasto-pro-extralight-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'antipasto_pro_regular';
+    src: url('fonts/antipasto-pro-regular-trial-webfont.woff2') format('woff2'),
+         url('fonts/antipasto-pro-regular-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+                    /* RESET */
+
+body{
+    max-width: 1178px;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+a{
+    all: unset;
+}
+
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1178px;
+}
+
+.bg-light{
+    background-color: #F2F2F2 !important;
+}
+
+
+                    /* MAIN TITLE */
+#title{
+    font-family: 'antipasto_pro_regular';
+    margin: 0;
+}
+
+#title p{
+    font-size: 1.5em;
+}
+
+                    /* NAVBAR */
+
+#navBar{
+    border: 5px rgba(128, 128, 128, 0.404) solid;
+}
+
+#navbarNav ul li{
+    margin: 0 20px;
+    font-size: 1.5em;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler-icon {
+    width: 3em;
+    height: 3em;
+  }
+
+.faded{
+    color: rgb(154, 163, 163);
+}
+
+                /* SLIDER */
+
+#carouselCaption{
+    background-color: rgba(22, 4, 4, 0.705);
+    width: 100%;
+}
+
+
+
+                /* CARDS */
+
+  .card {
+    border: 5px solid rgba(0, 0, 0, 0.125);
+  }
+
+  .card-header {
+	border-bottom: 5px solid rgba(0,0,0,.125);
+}
+
+                    /* JUMBOTRON */
+.jumbotron {
+    padding: 0.4rem 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+#ligne{
+    width: 100%;
+    height: 5px;
+    background: grey;
+    position: relative;
+    top: 10px;
+}
+
+#ligne2{
+    width: 10%;
+    height: 1px;
+    background: grey;
+    position: relative;
+    top: 12px;
+}
+
+#imageCatalogue{
+    width: 105%;
+}
+
+
+@media only screen and (max-width: 991px) {
+    #navBar{
+        border: none;
+    }
+    .bg-light {
+        background-color: transparent !important;
+    }
+    #navbarNav ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #title{
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+    #carouselExampleSlidesOnly{
+        display: none;
+    }
+    #zbli{
+        text-align: center !important;
+    }
+  }
+
+  #bouttonVert{
+    position: relative;
+    bottom: 50%;
+    left: 50%;
+  }
