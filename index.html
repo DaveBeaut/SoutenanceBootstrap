@@ -24,7 +24,7 @@
 <body>
 
     <!-- TITLE -->
-
+    <header>
     <div id="title"
 
         class="container-fluid justify-content-center row mb-0 mb-lg-4 mt-5 align-items-baseline text-center">
@@ -86,12 +86,13 @@
         </div>
 
     </nav>
+    </header>
 
     <!-- SLIDER -->
 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
 
-        <div class="carousel-inner d-sm-none d-lg-block mt-4 mb-4">
+        <div class="carousel-inner d-sm-none d-lg-block mt-4">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/chaises.jpg" alt="First slide">
             </div>
@@ -111,11 +112,15 @@
 
     </div>
 
-        <div class="d-flex mb-5 mt-lg-5 mt-sm-4 mb-sm-4">
+                    <!-- texte + ligne -->
+
+        <div class="d-flex mt-4 mb-4">
             <div id="ligne"></div>
-                <span>NOUVELLE&nbsp;COLLECTION</span>
+                <span class="textLign mx-4 bold font-weight-bold">NOUVELLE&nbsp;COLLECTION</span>
             <div id="ligne"></div>
         </div>
+                    
+                    <!-- CARDS -->
 
         <div class="row d-flex justify-content-between mb-5">
 
@@ -157,26 +162,26 @@
 
         </div>
 
-
+                        <!-- JUMBOTRONS -->
 
         <div class="row">
 
             <div class="col-md-4 col-12 ">
 
-                <div class="d-flex mb-5 mt-lg-5 mt-sm-4 mb-sm-4">
+                <div class="d-flex mb-5 ">
                     <div id="ligne"></div>
-                        <span>DERNIERES&nbsp;NEWS</span>
+                        <span class="textLign mx-4 font-weight-bold">Dernières&nbsp;News</span>
                     <div id="ligne"></div>
                 </div>
 
-                <div class="jumbotron">
+                <div class="jumbotron mb-0 ">
                     <h2>21 OCTOBRE 2020</h2>
                     <p>Découvrez notre collection Lodge et ses différents éléments modulables et créez ainsi votre
                         combinaison!.</p>
                     <p><a class="btn btn-primary btn-large" href="#">Plus d'infos</a></p>
                 </div>
 
-                <div class="jumbotron">
+                <div class="jumbotron mb-0 border-top-0">
                     <h2>21 OCTOBRE 2020</h2>
                     <p>Découvrez notre collection Lodge et ses différents éléments modulables et créez ainsi
                         votrecombinaison!.</p>
@@ -184,10 +189,11 @@
                 </div>
             </div>
 
+                    <!-- PRESENTATION SOCIETE -->
 
-            <div class="col-6 col-md-5 mt-5">
+            <div class="col-6 col-md-5 col-mt-0 mt-5">
                 
-                <h3>Quelques mots sur notre société</h3>
+                <h3 class=" font-weight-bold ">Quelques mots sur notre société</h3>
 
                 <p>
                     Découvrez notre sélection de meubles contemporains et de mobilier moderne et design pour aménager
@@ -202,7 +208,7 @@
 
             </div>
 
-            <div class="col-3 col-md-3">
+            <div class="col-6 col-md-3">
 
                 <img id="imageCatalogue" alt="Bootstrap Image Preview" class="pr-3 mt-" src="images/fond-book.png" />
                 
@@ -228,6 +234,8 @@
                 </ul>
 
             </div>
+
+            <hr class="trait mt-5">
 
         </div>
 

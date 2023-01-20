@@ -24,6 +24,42 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'segoe_uibold_italic';
+    src: url('segoe_ui_bold_italic-webfont.woff2') format('woff2'),
+         url('segoe_ui_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'segoe_uibold';
+    src: url('fonts/segoe_ui_bold-webfont.woff2') format('woff2'),
+         url('segoe_ui_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'segoe_uiitalic';
+    src: url('segoe_ui_italic-webfont.woff2') format('woff2'),
+         url('segoe_ui_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'segoe_uiregular';
+    src: url('fonts/segoe_ui-webfont.woff2') format('woff2'),
+         url('segoe_ui-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
                     /* RESET */
 
 body{
@@ -32,6 +68,7 @@ body{
     background-color: #F6F6F6;
     padding-right: 0;
     padding-left: 0;
+    font-family: 'segoe_uiregular';
 }
 
 a{
@@ -93,7 +130,10 @@ a:hover{
     width: 100%;
 }
 
-
+.textLign{
+    font-size: 1.5em;
+    font-weight: 500;
+}
 
                 /* CARDS */
 
@@ -108,6 +148,9 @@ a:hover{
                     /* JUMBOTRON */
 .jumbotron {
     padding: 0.4rem 2rem;
+    border: 5px solid #DFDFDF;
+    border-radius: 0;
+    background-color:#f7f2f2 ;
 }
 
 
@@ -116,15 +159,21 @@ a:hover{
 
 
 
+#imageCatalogue{
+    width: 105%;
+}
 
-
+.trait{
+    width: 97%;
+    border: 1px solid grey;
+}
 
 #ligne{
     width: 100%;
-    height: 5px;
+    height: 3px;
     background: grey;
     position: relative;
-    top: 10px;
+    top: 15px;
 }
 
 #ligne2{
@@ -135,9 +184,9 @@ a:hover{
     top: 12px;
 }
 
-#imageCatalogue{
-    width: 105%;
-}
+
+
+
 
 
 @media only screen and (max-width: 991px) {
