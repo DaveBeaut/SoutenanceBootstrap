@@ -1,21 +1,4 @@
                     /* FONTS */
-
-@font-face {
-    font-family: 'antipasto_proextrabold';
-    src: url('fonts/antipasto-pro-extrabold-trial-webfont.woff2') format('woff2'),
-         url('fonts/antipasto-pro-extrabold-trial-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'antipasto_proextralight';
-    src: url('fonts/antipasto-pro-extralight-trial-webfont.woff2') format('woff2'),
-         url('fonts/antipasto-pro-extralight-trial-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'antipasto_pro_regular';
     src: url('fonts/antipasto-pro-regular-trial-webfont.woff2') format('woff2'),
@@ -25,30 +8,11 @@
 }
 
 @font-face {
-    font-family: 'segoe_uibold_italic';
-    src: url('segoe_ui_bold_italic-webfont.woff2') format('woff2'),
-         url('segoe_ui_bold_italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
     font-family: 'segoe_uibold';
     src: url('fonts/segoe_ui_bold-webfont.woff2') format('woff2'),
          url('segoe_ui_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'segoe_uiitalic';
-    src: url('segoe_ui_italic-webfont.woff2') format('woff2'),
-         url('segoe_ui_italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 @font-face {
@@ -57,7 +21,6 @@
          url('segoe_ui-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
                     /* RESET */
@@ -92,8 +55,8 @@ a:hover{
     background-color: #F2F2F2 !important;
 }
 
-
                     /* MAIN TITLE */
+
 #title{
     font-family: 'antipasto_pro_regular';
     margin: 0;
@@ -114,10 +77,6 @@ a:hover{
     font-size: 1.5em;
 }
 
-.navbar-toggler{
-    border: none;
-}
-
 .navbar-toggler-icon {
     width: 3em;
     height: 3em;
@@ -129,33 +88,54 @@ a:hover{
 
                 /* SLIDER */
 
-#carouselCaption{
-    background-color: rgba(22, 4, 4, 0.705);
-    width: 100%;
-}
 
 .textLign{
     font-size: 1.5em;
     font-weight: 500;
 }
 
+.carousel-caption {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    z-index: 10;
+    padding-top: 50px;
+    width: 100%;
+    background-color: rgba(21, 19, 29, 0.705);
+    padding-bottom: 0px;
+  }
+
                 /* CARDS */
 
   .card {
     border: 5px solid rgba(0, 0, 0, 0.125);
+    max-width: 265px;
   }
 
   .card-header {
 	border-bottom: 5px solid rgba(0,0,0,.125);
 }
 
-                    /* JUMBOTRON */
+                /* JUMBOTRON */
+
 .jumbotron {
-    padding: 0.4rem 2rem;
+    padding: 3rem 2rem;
     border: 5px solid #DFDFDF;
     border-radius: 0;
     background-color:#f7f2f2 ;
 }
+
+#jumbo1P {
+    max-height: 149px;
+    overflow: hidden ;
+}
+
+#jumbo2P {
+    max-height: 149px;
+    overflow: hidden ;
+}
+
+                /* PRESENTATION */
 
 .presentation{
     margin-top: 7% !important;
@@ -165,24 +145,30 @@ a:hover{
     font-size: 1.2em;
 }
 
+                /* IMAGE CATALOGUE */
+
+#imageCatalogue{
+    width: 105%;
+}
+
+                /* LISTE SERVICES */
+
 .listeServices{
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .listeServices li{
     margin-bottom: 10px;
 } 
 
+                /* RESEAUX SOCIAUX */
+
 i{
     font-size: 3em;
     color: blueviolet;
 }
 
-
-
-#imageCatalogue{
-    width: 105%;
-}
+                /* TRAITS */
 
 .trait{
     width: 97%;
@@ -205,10 +191,7 @@ i{
     top: 12px;
 }
 
-
-
-
-
+                /* MEDIAQUERRIES */
 
 @media only screen and (max-width: 991px) {
     #navBar{
@@ -229,13 +212,6 @@ i{
     #carouselExampleSlidesOnly{
         display: none;
     }
-    #zbli{
-        text-align: center !important;
-    }
   }
 
-  #bouttonVert{
-    position: relative;
-    bottom: 50%;
-    left: 50%;
-  }
+ 
