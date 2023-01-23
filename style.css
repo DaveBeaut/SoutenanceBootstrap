@@ -182,33 +182,6 @@ a:hover{
 
                 /* IMAGE CATALOGUE */
 
-/* #imageCatalogue{
-    width: 105%;
-}
-
-#btnImage{
-    
-    color: rgb(40, 16, 198);
-    background: none;
-    border: none;
-}
-
-#imageCatalolgue{
-    width: 100%;
-    position: relative;
-  }
-  
-#btnImage{
-    font-size: 1em;
-    position:absolute;
-    right: 32%;
-    bottom: 11%;
-    padding:10px;
-    background: none;
-    border-radius:none;
-    color: white;
-} */
-
 #imgBook{
     position: relative;
     padding-top: 31.875%;
@@ -229,6 +202,8 @@ a:hover{
 }
 
 #btnOverlay{
+    font-family: 'antipasto_pro_regular';
+    font-weight: 600;
     position:absolute;
     top: 68%;
     left:7%;
@@ -237,6 +212,10 @@ a:hover{
     border: none;
     margin: 0;
     font-size: 1.2rem;
+  }
+
+  #btnOverlay:hover{
+    border-bottom: white 1px solid;
   }
 
                 /* LISTE SERVICES */
