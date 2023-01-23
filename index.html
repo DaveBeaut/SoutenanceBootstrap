@@ -13,6 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="script.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
@@ -27,21 +29,22 @@
 
     <header>
 
-        <div id="title" class="row justify-content-center my-4 align-items-baseline">
+        <div id="title" class="row container-fluid justify-content-center mx-auto my-4 align-items-baseline">
 
             <a href="#">
-                <p class="col-12 col-md-4">Magazine&nbsp;En&nbsp;Ligne</p>
+                <p class="col-12 col-lg-4">Magazine&nbsp;En&nbsp;Ligne</p>
             </a>
 
             <a href="#">
-                <h1 class="display-1  col-12 col-md-4">INTERIORS</h1>
+                <h1 class="display-1  col-12 col-lg-4">INTERIORS</h1>
             </a>
 
             <a href="#">
-                <p class="col-12 col-md-4">Nos&nbsp;Meilleures&nbsp;Idées</p>
+                <p class="col-12 col-lg-4">Nos&nbsp;Meilleures&nbsp;Idées</p>
             </a>
 
         </div>
+
 
         <!-- NAVBAR -->
 
@@ -181,7 +184,7 @@
     
                 </article>
     
-                <article class="jumbotron col-5 col-lg-12 mt-0 mb-0">
+                <article class="jumbotron2 col-5 col-lg-12 mt-0 mb-0">
     
                     <h4 id="dateNews2" class="display-5"></h4>
     
@@ -197,9 +200,9 @@
 
                     <div class="modal-dialog modal-dialog-centered" role="document">
             
-                        <div class="modal-content">
+                        <div id="bgModal" class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="modalTitle">Modal title</h5>
+                                <h5 class="modal-title" id="modalTitle"></h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
@@ -300,7 +303,10 @@
 
         <aside class="col-5 col-md-4 col-lg-3 ml-sm-3 mt-md-5 ml-md-2 mx-lg-0">
 
-            <img id="imageCatalogue" alt="Bootstrap Image Preview" class="pr-3 mt-" src="images/fond-book.png">
+            <div id="imgBook">
+                <p id="reservezCatalogue">RESERVEZ<br>NOTRE<br>CATALOGUE  </p>
+                <button id="btnOverlay">Cliquez<br>ICI</button>
+            </div>
 
             <ul class="listeServices mt-4 ">
 
@@ -348,7 +354,7 @@
         <div>&copy;GBS - INTERIOS 2023</div>
     </footer>
 
-    <script src="script.js"></script>
+    
 
 </body>
 

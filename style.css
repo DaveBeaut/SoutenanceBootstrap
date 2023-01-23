@@ -52,7 +52,7 @@ a:hover{
 }
 
 .bg-light{
-    background-color: #F2F2F2 !important;
+    background-color: #F6F6F6 !important;
 }
 
                     /* MAIN TITLE */    
@@ -137,6 +137,16 @@ a:hover{
     max-width: 375px;
 }
 
+.jumbotron2 {
+    padding: 3rem 2rem;
+    border: 5px solid #DFDFDF;
+    border-radius: 0;
+    background-color:#f7f2f2 ;
+    max-width: 375px;
+    position: relative;
+    bottom: 5px;
+}
+
 #jumbo1P {
     max-height: 149px;
     overflow: hidden ;
@@ -147,13 +157,18 @@ a:hover{
     max-height: 149px;
     overflow: hidden ;
     color: rgba(0, 0, 0, 0.582);
+   
 }
 
 .jumboBtn:hover{
     font-weight: 600;
 }
 
+                /* BOITES MODALES */
 
+#bgModal{
+    background-color: #F6F6F6;
+}
 
                 /* PRESENTATION */
 
@@ -167,9 +182,62 @@ a:hover{
 
                 /* IMAGE CATALOGUE */
 
-#imageCatalogue{
+/* #imageCatalogue{
     width: 105%;
 }
+
+#btnImage{
+    
+    color: rgb(40, 16, 198);
+    background: none;
+    border: none;
+}
+
+#imageCatalolgue{
+    width: 100%;
+    position: relative;
+  }
+  
+#btnImage{
+    font-size: 1em;
+    position:absolute;
+    right: 32%;
+    bottom: 11%;
+    padding:10px;
+    background: none;
+    border-radius:none;
+    color: white;
+} */
+
+#imgBook{
+    position: relative;
+    padding-top: 31.875%;
+    height: 250px;
+    background: url('images/fond-book.png') 0 0 no-repeat;
+    background-size: cover;
+  }
+
+#reservezCatalogue{
+    position:absolute;
+    top: 10%;
+    left:7%;
+    background: none;
+    font-weight: 600;
+    border: none;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+#btnOverlay{
+    position:absolute;
+    top: 68%;
+    left:7%;
+    color: white;
+    background: none;
+    border: none;
+    margin: 0;
+    font-size: 1.2rem;
+  }
 
                 /* LISTE SERVICES */
 
@@ -244,6 +312,10 @@ footer i:hover{
     }
     #carouselExampleSlidesOnly{
         display: none;
+    }
+
+    .jumbotron2{
+        position: initial;
     }
   }
 
