@@ -6,7 +6,8 @@ window.onload = function() {
     // Faire autant de fois de fetch qu'il a d'APIS (retourne API) et modifie le dernier caractère de l'adresse => appeler les fonctions si res.ok sinon gestion des erreurs.
   nAPIS.forEach(function(API) {
     fetch(`https://www.tbads.eu/greta/kercode/ajax/?article=${API}`)
-        .then(res => {
+        .then(res => { 
+            console.log(res)
 
             if(res.ok){
                 res.json().then(data => {
@@ -21,7 +22,9 @@ window.onload = function() {
         })
         
         .catch(error => {
-        });
+            console.error('ERREUR : ', error);
+        })
+
   });
   
                 // ! Utiliser des variables génériques terminant par un chiffre itérable !
